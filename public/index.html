@@ -3,405 +3,309 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nature Lover's Paradise — 5 Acres in Costilla County, CO</title>
-  <meta name="description" content="Own 5 acres in Costilla County, CO. Private, peaceful, and affordable land with owner financing. Escape the noise and lock in today's pricing." />
-  <link rel="canonical" href="{{CANONICAL_URL}}" />
-  <meta property="og:title" content="Nature Lover's Paradise — 5 Acres in Costilla County, CO" />
-  <meta property="og:description" content="Own 5 acres in Costilla County, CO. Private, peaceful, and affordable. Reserve today." />
+  <title>Live the Happy Days — 5 Acres in San Luis Valley Ranches, CO</title>
+  <meta name="description" content="Own 5 acres in SLVR — private, peaceful, and affordable. Camp now, build later*. Limited availability — first payment reserves it." />
+  <link rel="canonical" href="https://amerilands.com/properties/slvr-5ac" />
+  <meta property="og:title" content="Live the Happy Days — 5 Acres in San Luis Valley Ranches, CO" />
+  <meta property="og:description" content="Own 5 acres in SLVR — private, peaceful, and affordable. Camp now, build later*." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{CANONICAL_URL}}" />
+  <meta property="og:url" content="https://amerilands.com/properties/slvr-5ac" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Nature Lover's Paradise — 5 Acres in Costilla County, CO" />
-  <meta name="twitter:description" content="Own 5 acres in Costilla County, CO. Private, peaceful, and affordable. Reserve today." />
+  <meta name="twitter:title" content="Live the Happy Days — 5 Acres in San Luis Valley Ranches, CO" />
+  <meta name="twitter:description" content="Own 5 acres in SLVR — private, peaceful, and affordable. Camp now, build later*." />
   <style>
     /* === Base === */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;color:#111;background:#fff}
+    body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5;color:#111;background:#fff}
     a{color:inherit;text-decoration:none}
-    button{cursor:pointer;border:none}
+    button{cursor:pointer;border:none;background:none}
     h1,h2,h3,h4{font-weight:700;line-height:1.2}
-    ul{list-style:none}
+    ul{list-style:none;padding-left:1.25rem}
+    li{margin-bottom:.5rem}
     :focus{outline:2px solid #000;outline-offset:2px}
-
     /* === Utilities === */
     .container{max-width:960px;margin:0 auto;padding:1rem}
-    .btn{display:block;padding:1rem;margin:.5rem 0;font-size:1.125rem;text-align:center;border-radius:.25rem}
-    .btn-primary{background:#111;color:#fff}
-    .btn-primary:hover,.btn-primary:focus{background:#000}
-    .btn-secondary{background:#eee;color:#111}
-    .btn-secondary:hover,.btn-secondary:focus{background:#ddd}
     .grid{display:grid;gap:1rem}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .btn{display:block;width:100%;padding:1rem;font-size:1.125rem;text-align:center;border-radius:.25rem}
+    .btn.primary{background:#111;color:#fff}
+    .btn.primary:hover,.btn.primary:focus{background:#000}
+    .btn.outline{background:#fff;color:#111;border:2px solid #111}
+    .btn.outline:hover,.btn.outline:focus{background:#f5f5f5}
     .hidden{display:none}
-    .shadow{box-shadow:0 2px 4px rgba(0,0,0,.1)}
-
+    .mt-1{margin-top:1rem}
+    .mt-2{margin-top:2rem}
     /* === Layout === */
-    header{position:sticky;top:0;background:#fff;z-index:10}
-    header.scrolled{box-shadow:0 2px 4px rgba(0,0,0,.1)}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem}
+    header{position:sticky;top:0;z-index:10;background:#fff}
+    header.shadow{box-shadow:0 2px 4px rgba(0,0,0,.1)}
+    .topbar{display:flex;justify-content:space-between;align-items:center}
     main{padding-top:1rem}
-    @media(min-width:768px){
-      .grid-2{grid-template-columns:repeat(2,1fr)}
-      .grid-3{grid-template-columns:repeat(3,1fr)}
-      .btn{display:inline-block;width:auto}
-      .cta-buttons{display:flex;gap:1rem}
-    }
-
-    /* === Components === */
-    .offer-box{border:2px solid #111;padding:1rem;margin:1rem 0;text-align:center}
-    .trust-strip{display:flex;justify-content:center;gap:1rem;font-size:.875rem;padding:1rem 0;border-top:1px solid #eee;border-bottom:1px solid #eee}
-    .badge{padding:.25rem .5rem;border:1px solid #111;border-radius:.25rem}
-    .feature-card{padding:1rem;border:1px solid #eee;border-radius:.25rem;text-align:center}
-    .feature-icon{width:40px;height:40px;margin:0 auto 0.5rem;border-radius:50%;background:#111}
-    .map{width:100%;height:200px;margin:1rem 0;border:1px solid #ccc;display:flex;align-items:center;justify-content:center}
-    .price-compare{border:2px dashed #111;padding:1rem;margin-top:1rem;text-align:center}
-    .accordion button{width:100%;text-align:left;padding:1rem;font-size:1rem;border-bottom:1px solid #eee;background:#f9f9f9}
+    .hero{text-align:center}
+    .cta-stack{display:flex;flex-direction:column;gap:.5rem;margin-top:1rem}
+    @media(min-width:640px){.cta-stack{flex-direction:row;justify-content:center}}
+    .price-table{width:100%;border-collapse:collapse;margin-top:1rem}
+    .price-table th,.price-table td{border:1px solid #111;padding:.5rem;font-size:.875rem}
+    .trust-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem;font-size:.875rem}
+    .feature-grid{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+    .card{border:1px solid #ccc;padding:1rem;border-radius:.25rem}
+    .map{width:100%;height:200px;border:1px solid #ccc;display:flex;align-items:center;justify-content:center;margin:1rem 0}
+    .accordion button{width:100%;text-align:left;padding:1rem;font-size:1rem;border:1px solid #ccc;margin-bottom:.5rem;background:#f9f9f9}
     .accordion button[aria-expanded="true"]{background:#eee}
-    .accordion div{padding:1rem}
-    .slide-over{position:fixed;top:0;right:-100%;width:100%;max-width:400px;height:100%;background:#fff;box-shadow:-2px 0 5px rgba(0,0,0,.2);transition:right .3s ease;z-index:20;overflow-y:auto}
-    .slide-over.open{right:0}
-    .form-group{margin-bottom:1rem}
-    footer{padding:2rem 1rem;background:#f9f9f9;margin-top:2rem;font-size:.875rem}
+    .accordion div{padding:1rem;border:1px solid #ccc;border-top:none;margin-bottom:.5rem}
+    .drawer{position:fixed;left:0;right:0;bottom:-100%;background:#fff;border-top:2px solid #111;padding:1rem;transition:bottom .3s ease;z-index:20;max-height:100%;overflow-y:auto}
+    .drawer.open{bottom:0}
+    footer{background:#f9f9f9;padding:2rem 1rem;margin-top:2rem;font-size:.875rem}
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{left:0;width:auto;height:auto;padding:.5rem;background:#000;color:#fff;z-index:1000}
   </style>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
-<!-- === Section: Top Bar === -->
-<header id="top">
-  <nav class="container">
-    <div>AmeriLands</div>
-    <a class="btn btn-primary" href="tel:+17207347471" aria-label="Call now">Call Now</a>
-  </nav>
+<header>
+  <div class="topbar container">
+    <div class="logo">AmeriLands</div>
+    <button class="btn outline" data-open-reserve>Reserve Now</button>
+  </div>
 </header>
-
 <main id="main">
-  <!-- === Section: Hero === -->
-  <section class="container" aria-labelledby="hero-title">
-    <h1 id="hero-title">5 Acres in Costilla County, CO — Yours Today</h1>
-    <p>Escape the noise. Camp now, build later*, and lock in today's pricing.</p>
-    <div class="offer-box">
-      <p><strong>Own it for just $199 down, then $129/mo for 84 months</strong></p>
-      <p>Cash price: $7,995</p>
-      <ul>
-        <li>Drive-up access</li>
-        <li>Quiet road</li>
-        <li>Panoramic skies</li>
-        <li>Low taxes</li>
-        <li>Flexible owner financing</li>
-      </ul>
-      <div class="cta-buttons">
-        <button class="btn btn-primary" id="reserveBtn" role="button" aria-label="Reserve now">Reserve Now</button>
-        <a class="btn btn-secondary" href="tel:+17207347471" aria-label="Talk to a land guide">Talk to a Land Guide</a>
+  <!-- Hero -->
+  <section class="hero container" aria-labelledby="hero-title">
+    <h1 id="hero-title">Live the Happy Days — 5 Acres in San Luis Valley Ranches, CO</h1>
+    <p>Own 5 acres in SLVR — private, peaceful, and affordable. Camp now, build later*.</p>
+    <div class="offer-box mt-1">
+      <p><strong>Just $199 down</strong> • <strong>From $129/mo</strong></p>
+      <table class="price-table" aria-label="Financing plans">
+        <tr><th>Plan</th><th>Monthly</th><th>Term</th></tr>
+        <tr><td>Option A</td><td>$129</td><td>84 mo</td></tr>
+        <tr><td>Option B</td><td>$149</td><td>72 mo</td></tr>
+        <tr><td>Option C</td><td>$179</td><td>60 mo</td></tr>
+      </table>
+      <p class="mt-1">Document Fee: $249 (one-time)</p>
+      <div class="cta-stack">
+        <button class="btn primary" data-open-reserve>Reserve for $199 Today</button>
       </div>
-      <div style="margin-top:1rem;font-size:.875rem">
-        Special Ends in <span id="countdown" data-deadline="2025-12-31T23:59:59Z">00:00:00</span><br/>
-        <small>Fully refundable reservation.</small>
+      <div class="trust-strip">
+        <span>45-Day Money-Back Guarantee</span>
+        <span>Secure Checkout</span>
+        <span>No Credit Check</span>
       </div>
+      <p class="mt-1"><span id="countdown"></span><br/>Limited availability — first payment reserves it.</p>
     </div>
   </section>
 
-  <!-- === Section: Trust Strip === -->
-  <section class="trust-strip" aria-label="Trust badges">
-    <span class="badge">30-Day Money-Back Guarantee</span>
-    <span class="badge">Secure Checkout</span>
-    <span class="badge">No Credit Check*</span>
-  </section>
-
-  <!-- === Section: Feature Grid === -->
-  <section class="container" aria-labelledby="features-title">
-    <h2 id="features-title">Property Highlights</h2>
-    <div class="grid grid-3" style="margin-top:1rem">
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Size: 5.00 acres</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>County: Costilla, CO</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Terrain: Flat, buildable, high-desert plain</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Road Access: Well-maintained dirt roads (George Rd)</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Power: Likely solar/propane; off-grid area</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Water: Well or water tank/cistern</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Zoning: Residential/Agricultural (min. 600 sq ft for site-built)</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>HOA: None (No HOAs/POAs)</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"></div>
-        <p>Taxes: Low—confirm with county (typical &lt;$100/yr in area)</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- === Section: Why This Lot === -->
-  <section class="container" aria-labelledby="why-title">
-    <h2 id="why-title">Why This Lot?</h2>
-    <p>Discover a weekend escape where the stars shine brighter and the air feels fresher. Nestled in Costilla County, this 5-acre parcel offers privacy and panoramic mountain views.</p>
-    <p>Use it as your recreational basecamp today and build your dream cabin when you're ready*. With public lands nearby, adventure is always within reach.</p>
-    <p>Land in this area is disappearing fast. Lock in a piece of Colorado at a fraction of typical market prices.</p>
-    <div class="price-compare">
-      <p>Similar 5-acre lots: <s>$9,000–$12,000</s></p>
-      <p><strong>Your price today: $7,995</strong></p>
-    </div>
-  </section>
-
-  <!-- === Section: Map & Coordinates === -->
-  <section class="container" aria-labelledby="map-title">
-    <h2 id="map-title">Map &amp; Coordinates</h2>
-    <p>Center: 37.165409, -105.687836</p>
-    <ul>
-      <li>NW: 37.165731, -105.689144</li>
-      <li>NE: 37.165892, -105.686489</li>
-      <li>SW: 37.164994, -105.689122</li>
-      <li>SE: 37.164987, -105.686761</li>
+  <!-- Property Quick Facts -->
+  <section class="container mt-2" aria-labelledby="facts-title">
+    <h2 id="facts-title">Property Quick Facts</h2>
+    <ul class="mt-1">
+      <li><strong>County:</strong> Costilla, CO</li>
+      <li><strong>Subdivision:</strong> San Luis Valley Ranches (SLVR)</li>
+      <li><strong>Access:</strong> County-maintained dirt roads</li>
+      <li><strong>Power:</strong> Off-grid area — solar/propane recommended</li>
+      <li><strong>Water:</strong> Well or cistern (buyer to verify)</li>
+      <li><strong>Zoning:</strong> Residential/Agricultural; verify with county</li>
+      <li><strong>Taxes:</strong> Low (buyer to verify with county)</li>
+      <li><strong>HOA/POA:</strong> None</li>
     </ul>
-    <div class="map">
-      <svg width="100" height="100" aria-label="Map placeholder">
-        <rect x="0" y="0" width="100" height="100" fill="#eee" stroke="#999" />
-        <circle cx="50" cy="50" r="5" fill="#111" />
+  </section>
+
+  <!-- Use Rules -->
+  <section class="container mt-2 card" aria-labelledby="use-title">
+    <h2 id="use-title">Use Rules</h2>
+    <ul class="mt-1">
+      <li>Camping: Up to 14 days every 3 months without a permit; longer stays require county permit.</li>
+      <li>RV use: Long-term up to ~180 days/year with permit & septic/water hookup (see county).</li>
+      <li>Zoning/Permits: <a href="https://costillacounty-co.gov/planning-zoning" target="_blank" rel="noopener">Costilla County Planning &amp; Zoning</a></li>
+    </ul>
+  </section>
+
+  <!-- Why This Lot -->
+  <section class="container mt-2" aria-labelledby="why-title">
+    <h2 id="why-title">Why This Lot</h2>
+    <p class="mt-1">Weekends feel longer here. Park your camper, watch the sunset over the Sangre de Cristo Mountains, and fall asleep under a canopy of stars.</p>
+    <p>Whether you want a recreational basecamp or a future homesite, these five acres give you room to roam and a hedge against rising land prices.</p>
+    <p class="price-anchor">Similar 5-acre SLVR parcels often list higher — lock in owner financing today.</p>
+  </section>
+
+  <!-- Feature Grid -->
+  <section class="container mt-2" aria-labelledby="features-title">
+    <h2 id="features-title">Features</h2>
+    <div class="grid feature-grid mt-1">
+      <div class="card">Size: 5 acres</div>
+      <div class="card">Access: County dirt roads</div>
+      <div class="card">Terrain: Level high-desert prairie</div>
+      <div class="card">Power: Go solar or propane</div>
+      <div class="card">Water: Well or cistern</div>
+      <div class="card">Zoning: Residential/Agricultural</div>
+      <div class="card">Taxes: Low yearly</div>
+      <div class="card">Nearest Towns: San Luis &amp; Alamosa</div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="container mt-2" aria-labelledby="map-title">
+    <h2 id="map-title">Map</h2>
+    <div class="map" role="img" aria-label="Map placeholder">
+      <svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="200" fill="#eee" />
+        <circle cx="100" cy="80" r="10" fill="#111" />
+        <text x="100" y="120" text-anchor="middle" font-size="12">San Luis Valley Ranches, Costilla County, CO</text>
       </svg>
     </div>
+    <p class="mt-1">Coordinates available on request.</p>
   </section>
 
-  <!-- === Section: Payment Options === -->
-  <section class="container" aria-labelledby="payment-title">
-    <h2 id="payment-title">Payment Options</h2>
-    <div class="grid grid-2" style="margin-top:1rem">
-      <div>
+  <!-- Payment Options -->
+  <section class="container mt-2" aria-labelledby="pay-title">
+    <h2 id="pay-title">Payment Options</h2>
+    <div class="grid grid-2 mt-1">
+      <div class="card">
         <h3>Owner Financing</h3>
-        <ul>
+        <ul class="mt-1">
           <li>$199 down</li>
           <li>$129/mo for 84 months</li>
-          <li>Doc fee: 249</li>
-          <li>Prepayment allowed</li>
-          <li>No balloon payment</li>
+          <li>$149/mo for 72 months</li>
+          <li>$179/mo for 60 months</li>
+          <li>$249 doc fee</li>
+          <li>No interest • No prepayment penalty • No credit check</li>
         </ul>
       </div>
-      <div>
-        <h3>Cash Discount</h3>
-        <ul>
-          <li>Cash price: $7,995</li>
-          <li>Close in As fast as title allows (often 7–14 days)</li>
-          <li>Title process: Warranty deed via standard title process</li>
-        </ul>
+      <div class="card">
+        <h3>Cash</h3>
+        <p class="mt-1">Ask for cash discount price.</p>
       </div>
     </div>
   </section>
 
-  <!-- === Section: Compliance Box === -->
-  <section class="container" aria-labelledby="compliance-title">
-    <h2 id="compliance-title">What You Can Do Here</h2>
-    <p>Great for camping and future build*. Check county zoning: TODO link.</p>
-    <ul>
-      <li>Camping rules: Up to 14 days every 3 months without a permit; longer stays require county permit</li>
-      <li>RV use: Short-term OK; long-term up to ~180 days/year with septic + permit</li>
-      <li>Building setbacks: Per Costilla County Land Use Code—verify with Planning & Zoning</li>
-    </ul>
-  </section>
-
-  <!-- === Section: Testimonials === -->
-  <section class="container" aria-labelledby="testimonials-title">
-    <h2 id="testimonials-title">Real Buyers, Real Deals</h2>
-    <blockquote>"Smooth process and great communication." — J.D., Denver</blockquote>
-    <blockquote>"Exactly as advertised. We love our new land!" — M.K., Phoenix</blockquote>
-  </section>
-
-  <!-- === Section: FAQ === -->
-  <section class="container" aria-labelledby="faq-title">
-    <h2 id="faq-title">Frequently Asked Questions</h2>
-    <div class="accordion" id="faq">
-      <div>
-        <button aria-expanded="false">Are there closing costs?</button>
-        <div class="hidden">Yes, a small doc fee applies. Details above.</div>
-      </div>
-      <div>
-        <button aria-expanded="false">Do you check credit?</button>
-        <div class="hidden">No credit check*, just a simple agreement.</div>
-      </div>
-      <div>
-        <button aria-expanded="false">Is there a guarantee?</button>
-        <div class="hidden">30-Day Money-Back Guarantee.</div>
-      </div>
-      <div>
-        <button aria-expanded="false">How do I access the property?</button>
-        <div class="hidden">Via Well-maintained dirt roads (George Rd). Directions provided after reservation.</div>
-      </div>
-      <div>
-        <button aria-expanded="false">Is it in a floodplain?</button>
-        <div class="hidden">Not in a mapped flood zone (area is generally Flood Zone C; verify)</div>
-      </div>
-      <div>
-        <button aria-expanded="false">Any HOA or POA?</button>
-        <div class="hidden">{{HOA_INFO}}</div>
-      </div>
-      <div>
-        <button aria-expanded="false">How does the reservation work?</button>
-        <div class="hidden">Pay $249 to hold the lot for 7 days while you do due diligence.</div>
-      </div>
-      <div>
-        <button aria-expanded="false">What's the refund policy?</button>
-        <div class="hidden">We refund your reservation if you decide not to buy within 30 days.</div>
-      </div>
+  <!-- Testimonials -->
+  <section class="container mt-2" aria-labelledby="test-title">
+    <h2 id="test-title">What Buyers Say</h2>
+    <div class="grid mt-1">
+      <blockquote class="card">"Smooth process and honest communication." — J.S., Denver</blockquote>
+      <blockquote class="card">"Perfect weekend escape for our family." — M.L., Albuquerque</blockquote>
+      <blockquote class="card">"Financing made land ownership possible for us." — R.K., Colorado Springs</blockquote>
     </div>
   </section>
 
-  <!-- === Section: Final CTA === -->
-  <section class="container" aria-labelledby="final-cta-title">
-    <h2 id="final-cta-title">Own 5 Acres in Costilla County Today</h2>
-    <p>Only 1 lot available at this price. 30-Day Money-Back Guarantee.</p>
-    <div class="cta-buttons">
-      <button class="btn btn-primary" id="reserveBtnBottom" role="button" aria-label="Reserve for fee">Reserve for $249</button>
-      <a class="btn btn-secondary" href="tel:+17207347471" aria-label="Call us">Call: +1-720-734-7471</a>
+  <!-- FAQ -->
+  <section class="container mt-2" aria-labelledby="faq-title">
+    <h2 id="faq-title">FAQ</h2>
+    <div class="accordion mt-1">
+      <button aria-expanded="false" aria-controls="faq1">Credit checks?</button>
+      <div id="faq1" class="hidden">No.</div>
+      <button aria-expanded="false" aria-controls="faq2">How do reservations work?</button>
+      <div id="faq2" class="hidden">$249 fully refundable during your due diligence window.</div>
+      <button aria-expanded="false" aria-controls="faq3">Guarantee?</button>
+      <div id="faq3" class="hidden">100% Satisfaction — 45-Day Money-Back Guarantee.</div>
+      <button aria-expanded="false" aria-controls="faq4">Access &amp; utilities?</button>
+      <div id="faq4" class="hidden">County dirt road access; solar or propane for power; well or cistern for water — verify specifics.</div>
+      <button aria-expanded="false" aria-controls="faq5">Zoning, RV, camping?</button>
+      <div id="faq5" class="hidden">Camping up to 14 days every 3 months without permit; RV up to ~180 days/year with permit & septic/water hookup. See county for details.</div>
+      <button aria-expanded="false" aria-controls="faq6">HOA/POA?</button>
+      <div id="faq6" class="hidden">None.</div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="container mt-2" aria-labelledby="final-title">
+    <h2 id="final-title">Ready to Own 5 Acres?</h2>
+    <p class="mt-1"><strong>Only $199 down</strong> secures your land. 100% Satisfaction — 45-Day Money-Back Guarantee.</p>
+    <div class="cta-stack">
+      <button class="btn primary" data-open-reserve>Reserve for $199 Today</button>
     </div>
   </section>
 </main>
-
-<!-- === Section: Footer === -->
 <footer>
   <div class="container">
-    <p>AmeriLands</p>
-    <p>Email: <a href="mailto:info@amerilands.com">info@amerilands.com</a></p>
-    <p>Phone: +1-720-734-7471</p>
-    <nav>
-      <a href="#top">Home</a> |
-      <a href="#features-title">Features</a> |
-      <a href="#faq-title">FAQ</a>
-    </nav>
-    <p>Buyer responsible for verifying all property details and restrictions. Information is deemed reliable but not guaranteed.</p>
+    <p>AmeriLands • <a href="mailto:info@amerilands.com">info@amerilands.com</a></p>
+    <p class="mt-1">Buyer responsible for verifying all property details and restrictions. Information deemed reliable but not guaranteed.</p>
     <p>*Buyer to verify zoning and permitted uses with county.</p>
   </div>
 </footer>
 
-<!-- === Slide-over Reservation Form === -->
-<div class="slide-over" id="reservationPanel" aria-hidden="true">
+<!-- Reservation Drawer -->
+<div id="reserve-drawer" class="drawer" aria-hidden="true">
   <div class="container">
-    <h2>Reserve Your Lot</h2>
-    <form id="reservationForm">
-      <!-- TODO: set form action endpoint -->
-      <div class="form-group">
-        <label for="fullName">Full Name</label>
-        <input id="fullName" name="fullName" type="text" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" type="tel" required />
-      </div>
-      <div class="form-group">
-        <label for="option">Preferred Option</label>
+    <button id="reserve-close" class="btn outline">Close</button>
+    <h2 class="mt-1">Reserve Your Lot</h2>
+    <form id="reserve-form" class="mt-1">
+      <!-- TODO: POST to reservation endpoint -->
+      <div class="mt-1"><label for="name">Name</label><br/><input id="name" name="name" type="text" required /></div>
+      <div class="mt-1"><label for="email">Email</label><br/><input id="email" name="email" type="email" required /></div>
+      <div class="mt-1"><label for="phone">Phone</label><br/><input id="phone" name="phone" type="tel" required /></div>
+      <div class="mt-1"><label for="option">Preferred Option</label><br/>
         <select id="option" name="option">
           <option>Financing</option>
           <option>Cash</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="zip">Zip Code</label>
-        <input id="zip" name="zip" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="notes">Notes</label>
-        <textarea id="notes" name="notes"></textarea>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-      <button class="btn btn-secondary" type="button" id="closePanel">Cancel</button>
-      <p id="formSuccess" class="hidden" role="status">We'll be in touch.</p>
+      <div class="mt-1"><label for="zip">Zip Code</label><br/><input id="zip" name="zip" type="text" /></div>
+      <div class="mt-1"><label for="notes">Notes</label><br/><textarea id="notes" name="notes"></textarea></div>
+      <button type="submit" class="btn primary mt-1">Submit</button>
+      <p class="success hidden mt-1" role="status">We’ll be in touch.</p>
     </form>
   </div>
 </div>
 
 <script>
-// === Script ===
 (function(){
-  const header = document.querySelector('header');
-  window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>0)});
+  const header=document.querySelector('header');
+  window.addEventListener('scroll',()=>header.classList.toggle('shadow',window.scrollY>0));
 
   const countdownEl=document.getElementById('countdown');
-  const deadline=new Date(countdownEl.dataset.deadline);
+  const now=new Date();
+  const deadline=new Date(now.getFullYear(),now.getMonth()+1,0,23,59,59);
   function updateCountdown(){
-    const now=new Date();
-    const diff=deadline-now;
-    if(diff<=0){countdownEl.textContent='Offer ending soon—call for availability';return;}
+    const diff=deadline-new Date();
+    if(diff<=0){countdownEl.textContent='Offer ending soon—reserve to check availability';return;}
     const hrs=Math.floor(diff/3.6e6),mins=Math.floor(diff%3.6e6/6e4),secs=Math.floor(diff%6e4/1e3);
     countdownEl.textContent=`${String(hrs).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
   }
   updateCountdown();
   setInterval(updateCountdown,1000);
 
-  const faq=document.getElementById('faq');
-  faq.addEventListener('click',e=>{
-    if(e.target.tagName.toLowerCase()==='button'){
-      const btn=e.target;const expanded=btn.getAttribute('aria-expanded')==='true';
-      btn.setAttribute('aria-expanded',!expanded);
-      const panel=btn.nextElementSibling;panel.classList.toggle('hidden');
-    }
-  });
-  faq.addEventListener('keydown',e=>{
-    if(e.target.tagName.toLowerCase()==='button' && (e.key==='Enter'||e.key===' ')){
-      e.preventDefault();e.target.click();
-    }
+  document.querySelectorAll('.accordion button').forEach(btn=>{
+    const panel=document.getElementById(btn.getAttribute('aria-controls'));
+    btn.addEventListener('click',()=>{
+      const expanded=btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded',String(!expanded));
+      panel.classList.toggle('hidden');
+    });
+    btn.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();btn.click();}});
   });
 
-  const panel=document.getElementById('reservationPanel');
-  const reserveBtns=[document.getElementById('reserveBtn'),document.getElementById('reserveBtnBottom')];
-  const closePanel=document.getElementById('closePanel');
-  reserveBtns.forEach(btn=>btn.addEventListener('click',()=>{panel.classList.add('open');panel.setAttribute('aria-hidden','false');}));
-  closePanel.addEventListener('click',()=>{panel.classList.remove('open');panel.setAttribute('aria-hidden','true');});
+  const drawer=document.getElementById('reserve-drawer');
+  document.querySelectorAll('[data-open-reserve]').forEach(el=>el.addEventListener('click',()=>{drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');}));
+  document.getElementById('reserve-close').addEventListener('click',()=>{drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');});
 
-  const form=document.getElementById('reservationForm');
-  const success=document.getElementById('formSuccess');
+  const form=document.getElementById('reserve-form');
+  const success=form.querySelector('.success');
   form.addEventListener('submit',e=>{
     e.preventDefault();
     if(form.checkValidity()){
-      success.classList.remove('hidden');
+      // TODO: send form data to server
       form.reset();
+      success.classList.remove('hidden');
     }
   });
 })();
 </script>
-
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Nature Lover's Paradise — 5 Acres in Costilla County, CO",
-  "description": "5-acre vacant land parcel in Costilla County, CO. Private, peaceful, and affordable.",
-  "brand": {"@type": "Organization", "name": "AmeriLands"},
-  "category": "Land",
-  "area": "5 acres",
-  "address": {"@type": "PostalAddress", "addressLocality": "Costilla County", "addressRegion": "CO", "addressCountry": "US"},
-  "offers": [{
-    "@type": "Offer",
-    "price": "7,995",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "seller": {"@type": "Organization", "name": "AmeriLands", "telephone": "+1-720-734-7471", "email": "info@amerilands.com"}
-  },{
-    "@type": "Offer",
-    "price": "199",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "seller": {"@type": "Organization", "name": "AmeriLands", "telephone": "+1-720-734-7471", "email": "info@amerilands.com"}
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"Live the Happy Days — 5 Acres in San Luis Valley Ranches, CO",
+  "description":"5-acre parcel in San Luis Valley Ranches, Costilla County, CO. 100% Satisfaction — 45-Day Money-Back Guarantee.",
+  "brand":{"@type":"Organization","name":"AmeriLands"},
+  "category":"Land",
+  "area":"5 acres",
+  "address":{"@type":"PostalAddress","addressLocality":"Costilla County","addressRegion":"CO","addressCountry":"US"},
+  "offers":[{
+    "@type":"Offer",
+    "price":"199",
+    "priceCurrency":"USD",
+    "description":"Down payment",
+    "availability":"https://schema.org/InStock",
+    "seller":{"@type":"Organization","name":"AmeriLands","email":"info@amerilands.com"}
   }]
 }
 </script>
