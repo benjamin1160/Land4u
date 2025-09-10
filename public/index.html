@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nature Lover's Paradise — 5 Acres in Costilla County, CO</title>
+  <meta name="description" content="Own 5 acres in Costilla County, CO. Private, peaceful, and affordable land with owner financing. Escape the noise and lock in today's pricing." />
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+  <meta property="og:title" content="Nature Lover's Paradise — 5 Acres in Costilla County, CO" />
+  <meta property="og:description" content="Own 5 acres in Costilla County, CO. Private, peaceful, and affordable. Reserve today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{CANONICAL_URL}}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Nature Lover's Paradise — 5 Acres in Costilla County, CO" />
+  <meta name="twitter:description" content="Own 5 acres in Costilla County, CO. Private, peaceful, and affordable. Reserve today." />
+  <style>
+    /* === Base === */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;color:#111;background:#fff}
+    a{color:inherit;text-decoration:none}
+    button{cursor:pointer;border:none}
+    h1,h2,h3,h4{font-weight:700;line-height:1.2}
+    ul{list-style:none}
+    :focus{outline:2px solid #000;outline-offset:2px}
+
+    /* === Utilities === */
+    .container{max-width:960px;margin:0 auto;padding:1rem}
+    .btn{display:block;padding:1rem;margin:.5rem 0;font-size:1.125rem;text-align:center;border-radius:.25rem}
+    .btn-primary{background:#111;color:#fff}
+    .btn-primary:hover,.btn-primary:focus{background:#000}
+    .btn-secondary{background:#eee;color:#111}
+    .btn-secondary:hover,.btn-secondary:focus{background:#ddd}
+    .grid{display:grid;gap:1rem}
+    .hidden{display:none}
+    .shadow{box-shadow:0 2px 4px rgba(0,0,0,.1)}
+
+    /* === Layout === */
+    header{position:sticky;top:0;background:#fff;z-index:10}
+    header.scrolled{box-shadow:0 2px 4px rgba(0,0,0,.1)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem}
+    main{padding-top:1rem}
+    @media(min-width:768px){
+      .grid-2{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .btn{display:inline-block;width:auto}
+      .cta-buttons{display:flex;gap:1rem}
+    }
+
+    /* === Components === */
+    .offer-box{border:2px solid #111;padding:1rem;margin:1rem 0;text-align:center}
+    .trust-strip{display:flex;justify-content:center;gap:1rem;font-size:.875rem;padding:1rem 0;border-top:1px solid #eee;border-bottom:1px solid #eee}
+    .badge{padding:.25rem .5rem;border:1px solid #111;border-radius:.25rem}
+    .feature-card{padding:1rem;border:1px solid #eee;border-radius:.25rem;text-align:center}
+    .feature-icon{width:40px;height:40px;margin:0 auto 0.5rem;border-radius:50%;background:#111}
+    .map{width:100%;height:200px;margin:1rem 0;border:1px solid #ccc;display:flex;align-items:center;justify-content:center}
+    .price-compare{border:2px dashed #111;padding:1rem;margin-top:1rem;text-align:center}
+    .accordion button{width:100%;text-align:left;padding:1rem;font-size:1rem;border-bottom:1px solid #eee;background:#f9f9f9}
+    .accordion button[aria-expanded="true"]{background:#eee}
+    .accordion div{padding:1rem}
+    .slide-over{position:fixed;top:0;right:-100%;width:100%;max-width:400px;height:100%;background:#fff;box-shadow:-2px 0 5px rgba(0,0,0,.2);transition:right .3s ease;z-index:20;overflow-y:auto}
+    .slide-over.open{right:0}
+    .form-group{margin-bottom:1rem}
+    footer{padding:2rem 1rem;background:#f9f9f9;margin-top:2rem;font-size:.875rem}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:0;width:auto;height:auto;padding:.5rem;background:#000;color:#fff;z-index:1000}
+  </style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<!-- === Section: Top Bar === -->
+<header id="top">
+  <nav class="container">
+    <div>AmeriLands</div>
+    <a class="btn btn-primary" href="tel:+1-XXX-XXX-XXXX" aria-label="Call now">Call Now</a>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- === Section: Hero === -->
+  <section class="container" aria-labelledby="hero-title">
+    <h1 id="hero-title">5 Acres in Costilla County, CO — Yours Today</h1>
+    <p>Escape the noise. Camp now, build later*, and lock in today's pricing.</p>
+    <div class="offer-box">
+      <p><strong>Own it for just ${{DOWN_PAYMENT}} down, then ${{MONTHLY}}/mo for {{TERM}} months</strong></p>
+      <p>Cash price: ${{CASH_PRICE}}</p>
+      <ul>
+        <li>Drive-up access</li>
+        <li>Quiet road</li>
+        <li>Panoramic skies</li>
+        <li>Low taxes</li>
+        <li>Flexible owner financing</li>
+      </ul>
+      <div class="cta-buttons">
+        <button class="btn btn-primary" id="reserveBtn" role="button" aria-label="Reserve now">Reserve Now</button>
+        <a class="btn btn-secondary" href="tel:+1-XXX-XXX-XXXX" aria-label="Talk to a land guide">Talk to a Land Guide</a>
+      </div>
+      <div style="margin-top:1rem;font-size:.875rem">
+        Special Ends in <span id="countdown" data-deadline="2025-12-31T23:59:59Z">00:00:00</span><br/>
+        <small>Fully refundable reservation.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Section: Trust Strip === -->
+  <section class="trust-strip" aria-label="Trust badges">
+    <span class="badge">30-Day Money-Back Guarantee</span>
+    <span class="badge">Secure Checkout</span>
+    <span class="badge">No Credit Check*</span>
+  </section>
+
+  <!-- === Section: Feature Grid === -->
+  <section class="container" aria-labelledby="features-title">
+    <h2 id="features-title">Property Highlights</h2>
+    <div class="grid grid-3" style="margin-top:1rem">
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Size: 5.00 acres</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>County: Costilla, CO</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Terrain: {{TERRAIN}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Road Access: {{ROAD_ACCESS}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Power: {{POWER}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Water: {{WATER}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Zoning: {{ZONING}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>HOA: {{HOA}}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"></div>
+        <p>Taxes: {{TAXES}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Section: Why This Lot === -->
+  <section class="container" aria-labelledby="why-title">
+    <h2 id="why-title">Why This Lot?</h2>
+    <p>Discover a weekend escape where the stars shine brighter and the air feels fresher. Nestled in Costilla County, this 5-acre parcel offers privacy and panoramic mountain views.</p>
+    <p>Use it as your recreational basecamp today and build your dream cabin when you're ready*. With public lands nearby, adventure is always within reach.</p>
+    <p>Land in this area is disappearing fast. Lock in a piece of Colorado at a fraction of typical market prices.</p>
+    <div class="price-compare">
+      <p>Similar 5-acre lots: <s>${{TYPICAL_PRICE}}</s></p>
+      <p><strong>Your price today: ${{CASH_PRICE}}</strong></p>
+    </div>
+  </section>
+
+  <!-- === Section: Map & Coordinates === -->
+  <section class="container" aria-labelledby="map-title">
+    <h2 id="map-title">Map &amp; Coordinates</h2>
+    <p>Center: {{CENTER_COORDS}}</p>
+    <ul>
+      <li>NW: {{NW_COORD}}</li>
+      <li>NE: {{NE_COORD}}</li>
+      <li>SW: {{SW_COORD}}</li>
+      <li>SE: {{SE_COORD}}</li>
+    </ul>
+    <div class="map">
+      <svg width="100" height="100" aria-label="Map placeholder">
+        <rect x="0" y="0" width="100" height="100" fill="#eee" stroke="#999" />
+        <circle cx="50" cy="50" r="5" fill="#111" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- === Section: Payment Options === -->
+  <section class="container" aria-labelledby="payment-title">
+    <h2 id="payment-title">Payment Options</h2>
+    <div class="grid grid-2" style="margin-top:1rem">
+      <div>
+        <h3>Owner Financing</h3>
+        <ul>
+          <li>${{DOWN_PAYMENT}} down</li>
+          <li>${{MONTHLY}}/mo for {{TERM}} months</li>
+          <li>Doc fee: {{DOC_FEE}}</li>
+          <li>Prepayment allowed</li>
+          <li>No balloon payment</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cash Discount</h3>
+        <ul>
+          <li>Cash price: ${{CASH_PRICE}}</li>
+          <li>Close in {{CLOSE_DAYS}} days</li>
+          <li>Title process: {{TITLE_PROCESS}}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Section: Compliance Box === -->
+  <section class="container" aria-labelledby="compliance-title">
+    <h2 id="compliance-title">What You Can Do Here</h2>
+    <p>Great for camping and future build*. Check county zoning: TODO link.</p>
+    <ul>
+      <li>Camping rules: {{CAMPING_RULES}}</li>
+      <li>RV use: {{RV_USE}}</li>
+      <li>Building setbacks: {{BUILDING_SETBACKS}}</li>
+    </ul>
+  </section>
+
+  <!-- === Section: Testimonials === -->
+  <section class="container" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title">Real Buyers, Real Deals</h2>
+    <blockquote>"Smooth process and great communication." — J.D., Denver</blockquote>
+    <blockquote>"Exactly as advertised. We love our new land!" — M.K., Phoenix</blockquote>
+  </section>
+
+  <!-- === Section: FAQ === -->
+  <section class="container" aria-labelledby="faq-title">
+    <h2 id="faq-title">Frequently Asked Questions</h2>
+    <div class="accordion" id="faq">
+      <div>
+        <button aria-expanded="false">Are there closing costs?</button>
+        <div class="hidden">Yes, a small doc fee applies. Details above.</div>
+      </div>
+      <div>
+        <button aria-expanded="false">Do you check credit?</button>
+        <div class="hidden">No credit check*, just a simple agreement.</div>
+      </div>
+      <div>
+        <button aria-expanded="false">Is there a guarantee?</button>
+        <div class="hidden">30-Day Money-Back Guarantee.</div>
+      </div>
+      <div>
+        <button aria-expanded="false">How do I access the property?</button>
+        <div class="hidden">Via {{ROAD_ACCESS}}. Directions provided after reservation.</div>
+      </div>
+      <div>
+        <button aria-expanded="false">Is it in a floodplain?</button>
+        <div class="hidden">{{FLOODPLAIN}}</div>
+      </div>
+      <div>
+        <button aria-expanded="false">Any HOA or POA?</button>
+        <div class="hidden">{{HOA_INFO}}</div>
+      </div>
+      <div>
+        <button aria-expanded="false">How does the reservation work?</button>
+        <div class="hidden">Pay ${{RESERVATION_FEE}} to hold the lot for 7 days while you do due diligence.</div>
+      </div>
+      <div>
+        <button aria-expanded="false">What's the refund policy?</button>
+        <div class="hidden">We refund your reservation if you decide not to buy within 30 days.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Section: Final CTA === -->
+  <section class="container" aria-labelledby="final-cta-title">
+    <h2 id="final-cta-title">Own 5 Acres in Costilla County Today</h2>
+    <p>Only 1 lot available at this price. 30-Day Money-Back Guarantee.</p>
+    <div class="cta-buttons">
+      <button class="btn btn-primary" id="reserveBtnBottom" role="button" aria-label="Reserve for fee">Reserve for ${{RESERVATION_FEE}}</button>
+      <a class="btn btn-secondary" href="tel:+1-XXX-XXX-XXXX" aria-label="Call us">Call: +1-XXX-XXX-XXXX</a>
+    </div>
+  </section>
+</main>
+
+<!-- === Section: Footer === -->
+<footer>
+  <div class="container">
+    <p>AmeriLands</p>
+    <p>Email: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+    <p>Phone: +1-XXX-XXX-XXXX</p>
+    <nav>
+      <a href="#top">Home</a> |
+      <a href="#features-title">Features</a> |
+      <a href="#faq-title">FAQ</a>
+    </nav>
+    <p>Buyer responsible for verifying all property details and restrictions. Information is deemed reliable but not guaranteed.</p>
+    <p>*Buyer to verify zoning and permitted uses with county.</p>
+  </div>
+</footer>
+
+<!-- === Slide-over Reservation Form === -->
+<div class="slide-over" id="reservationPanel" aria-hidden="true">
+  <div class="container">
+    <h2>Reserve Your Lot</h2>
+    <form id="reservationForm">
+      <!-- TODO: set form action endpoint -->
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required />
+      </div>
+      <div class="form-group">
+        <label for="option">Preferred Option</label>
+        <select id="option" name="option">
+          <option>Financing</option>
+          <option>Cash</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="zip">Zip Code</label>
+        <input id="zip" name="zip" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+      <button class="btn btn-secondary" type="button" id="closePanel">Cancel</button>
+      <p id="formSuccess" class="hidden" role="status">We'll be in touch.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+// === Script ===
+(function(){
+  const header = document.querySelector('header');
+  window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>0)});
+
+  const countdownEl=document.getElementById('countdown');
+  const deadline=new Date(countdownEl.dataset.deadline);
+  function updateCountdown(){
+    const now=new Date();
+    const diff=deadline-now;
+    if(diff<=0){countdownEl.textContent='Offer ending soon—call for availability';return;}
+    const hrs=Math.floor(diff/3.6e6),mins=Math.floor(diff%3.6e6/6e4),secs=Math.floor(diff%6e4/1e3);
+    countdownEl.textContent=`${String(hrs).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+  }
+  updateCountdown();
+  setInterval(updateCountdown,1000);
+
+  const faq=document.getElementById('faq');
+  faq.addEventListener('click',e=>{
+    if(e.target.tagName.toLowerCase()==='button'){
+      const btn=e.target;const expanded=btn.getAttribute('aria-expanded')==='true';
+      btn.setAttribute('aria-expanded',!expanded);
+      const panel=btn.nextElementSibling;panel.classList.toggle('hidden');
+    }
+  });
+  faq.addEventListener('keydown',e=>{
+    if(e.target.tagName.toLowerCase()==='button' && (e.key==='Enter'||e.key===' ')){
+      e.preventDefault();e.target.click();
+    }
+  });
+
+  const panel=document.getElementById('reservationPanel');
+  const reserveBtns=[document.getElementById('reserveBtn'),document.getElementById('reserveBtnBottom')];
+  const closePanel=document.getElementById('closePanel');
+  reserveBtns.forEach(btn=>btn.addEventListener('click',()=>{panel.classList.add('open');panel.setAttribute('aria-hidden','false');}));
+  closePanel.addEventListener('click',()=>{panel.classList.remove('open');panel.setAttribute('aria-hidden','true');});
+
+  const form=document.getElementById('reservationForm');
+  const success=document.getElementById('formSuccess');
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    if(form.checkValidity()){
+      success.classList.remove('hidden');
+      form.reset();
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Nature Lover's Paradise — 5 Acres in Costilla County, CO",
+  "description": "5-acre vacant land parcel in Costilla County, CO. Private, peaceful, and affordable.",
+  "brand": {"@type": "Organization", "name": "AmeriLands"},
+  "category": "Land",
+  "area": "5 acres",
+  "address": {"@type": "PostalAddress", "addressLocality": "Costilla County", "addressRegion": "CO", "addressCountry": "US"},
+  "offers": [{
+    "@type": "Offer",
+    "price": "{{CASH_PRICE}}",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "seller": {"@type": "Organization", "name": "AmeriLands", "telephone": "+1-XXX-XXX-XXXX", "email": "{{EMAIL}}"}
+  },{
+    "@type": "Offer",
+    "price": "{{DOWN_PAYMENT}}",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "seller": {"@type": "Organization", "name": "AmeriLands", "telephone": "+1-XXX-XXX-XXXX", "email": "{{EMAIL}}"}
+  }]
+}
+</script>
+</body>
+</html>
